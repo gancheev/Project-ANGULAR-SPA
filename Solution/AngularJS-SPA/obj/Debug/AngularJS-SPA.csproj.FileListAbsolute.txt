@@ -1,0 +1,6 @@
+C:\Users\Daniel\documents\visual studio 2013\Projects\AngularJS-SPA\AngularJS-SPA\bin\AngularJS-SPA.dll.config
+C:\Users\Daniel\documents\visual studio 2013\Projects\AngularJS-SPA\AngularJS-SPA\bin\AngularJS-SPA.dll
+C:\Users\Daniel\documents\visual studio 2013\Projects\AngularJS-SPA\AngularJS-SPA\bin\AngularJS-SPA.pdb
+C:\Users\Daniel\documents\visual studio 2013\Projects\AngularJS-SPA\AngularJS-SPA\obj\Debug\AngularJS-SPA.csprojResolveAssemblyReference.cache
+C:\Users\Daniel\documents\visual studio 2013\Projects\AngularJS-SPA\AngularJS-SPA\obj\Debug\AngularJS-SPA.dll
+C:\Users\Daniel\documents\visual studio 2013\Projects\AngularJS-SPA\AngularJS-SPA\obj\Debug\AngularJS-SPA.pdb
