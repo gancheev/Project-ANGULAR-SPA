@@ -1,15 +1,12 @@
-﻿app.controller('CategoriesController', ['$scope', 'categoriesData', function ($scope, categoriesData) {
-    function loadCategories(params) {
-        var params = params || {};
-            categoriesData.getCategories()
-        .$promise
-        .then(function (data) {
-            $scope.categories = data;
-        }); 
-    }
-    loadCategories();
+﻿app.controller('CategoriesController', ['$scope','$rootScope', 'categoriesData','filter', function($scope, $rootScope, categoriesData,filter) {
+    categoriesData.getCategories()
+    .$promise
+    .then(function (data) {
+        $scope.categories = data;
+    });
     $scope.categoryClicked = function categoryClicked(category) {
         filter.filterByCategory(category);
-        loadCategories();
+        $rootScope.$broadcast('categoryClicked',category)
+
     }
 }])

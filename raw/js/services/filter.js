@@ -1,4 +1,4 @@
-﻿app.factory('filter', ['', function () {
+﻿app.factory('filter', function () {
 
     var filterParams = {};
     
@@ -10,7 +10,7 @@
     function filterByTown(town) {
         filterParams.townId = town.id;
     }
-    function filterParams() {
+    function getFilterParams() {
         return filterParams;
     }
 
@@ -22,4 +22,4 @@
 
     }
 
-}])
+})
