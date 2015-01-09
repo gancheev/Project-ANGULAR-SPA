@@ -1,0 +1,6 @@
+C:\Users\Daniel\Desktop\AngularSPA\AngularSPA\bin\AngularSPA.dll.config
+C:\Users\Daniel\Desktop\AngularSPA\AngularSPA\bin\AngularSPA.dll
+C:\Users\Daniel\Desktop\AngularSPA\AngularSPA\bin\AngularSPA.pdb
+C:\Users\Daniel\Desktop\AngularSPA\AngularSPA\obj\Debug\AngularSPA.csprojResolveAssemblyReference.cache
+C:\Users\Daniel\Desktop\AngularSPA\AngularSPA\obj\Debug\AngularSPA.dll
+C:\Users\Daniel\Desktop\AngularSPA\AngularSPA\obj\Debug\AngularSPA.pdb
