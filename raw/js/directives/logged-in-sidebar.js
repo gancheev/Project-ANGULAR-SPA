@@ -1,6 +1,6 @@
-﻿app.directive('leftPublicSidebar', function () {
+﻿app.directive('loggedInSidebar', function () {
     return {
-        controller: '',
+        controller: 'LoggedInSidebarController',
         restrict: 'E',
         templateUrl: 'templates/public/left-sidebar.html',
         replace: false,
