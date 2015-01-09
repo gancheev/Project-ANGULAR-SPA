@@ -1,9 +1,8 @@
-﻿<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <title></title>
-</head>
-<body>
-
-</body>
-</html>
+﻿<div id="categories">
+    <h2>Categories</h2>
+    <ul>
+        <li ng-repeat="category in categories" ng-click="categoryFilter(category)">
+            {{category.name}}
+        </li>
+    </ul>
+</div>
