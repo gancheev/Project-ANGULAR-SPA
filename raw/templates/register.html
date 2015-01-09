@@ -1,0 +1,55 @@
+﻿<div class="container">
+    <form class="form-horizontal">
+        <fieldset>
+            <legend>Register</legend>
+            <div class="form-group">
+                <label for="Usename" class="col-lg-2 control-label">Usename</label>
+                <div class="col-lg-10">
+                    <input type="text" class="form-control" id="Usename" placeholder="Usename" ng-model="user.username">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputPassword" class="col-lg-2 control-label">Password</label>
+                <div class="col-lg-10">
+                    <input type="password" class="form-control" id="inputPassword" placeholder="Password" ng-model="user.password">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputPasswordConfirm" class="col-lg-2 control-label">Confirm Password</label>
+                <div class="col-lg-10">
+                    <input type="password" class="form-control" id="inputPasswordConfirm" placeholder="Confirm password" ng-model="user.confirmPassword">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="name" class="col-lg-2 control-label">Name</label>
+                <div class="col-lg-10">
+                    <input type="text" class="form-control" id="name" placeholder="name" ng-model="user.name">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputPhone" class="col-lg-2 control-label">Phone</label>
+                <div class="col-lg-10">
+                    <input type="text" class="form-control" id="inputPhone" placeholder="Input phone" ng-model="user.phone">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email" class="col-lg-2 control-label">Email</label>
+                <div class="col-lg-10">
+                    <input type="text" class="form-control" id="email" placeholder="Email" ng-model="user.email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="town" class="col-lg-2 control-label">Town</label>
+                <div class="col-lg-10">
+                    <select class="form-control" id="town" ng-options="town.id as town.name for town in towns" ng-model="user.townId"></select>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-lg-10 col-lg-offset-2">
+                    <button class="btn btn-default">Cancel</button>
+                    <button type="submit" class="btn btn-primary" ng-click="register(user)">Submit</button>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+</div>
