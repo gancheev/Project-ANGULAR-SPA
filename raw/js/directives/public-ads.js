@@ -3,6 +3,6 @@
         controller: 'PublicAdsController',
         restrict: 'E',
         templateUrl: 'templates/public/public-ads.html',
-        replace: true,
+        replace: false,
     }
 });
