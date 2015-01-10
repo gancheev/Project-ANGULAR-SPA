@@ -25,15 +25,12 @@
     function isAdmin() {
         var isAdmin = getUserData().isAdmin;
         return isAdmin;
+        
     }
     function isLoggedIn() {
         return !!getUserData();
     }
 
-    function show() {
-        var showe = false;
-        return showe;
-    }
 
     function getName() {
         var currentUserName = getUserData().username;
@@ -48,7 +45,6 @@
         isAdmin: isAdmin,
         isLoggedIn: isLoggedIn,
         getName: getName,
-        show: show
     }
 
 });

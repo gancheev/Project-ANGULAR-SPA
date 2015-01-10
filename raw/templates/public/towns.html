@@ -1,8 +1,8 @@
 ﻿<div>
-    <h2>Towns</h2>
-    <ul>
-        <li ng-repeat="town in towns" ng-click="townClicked(town)">
-            {{town.name}}
-        </li>
-    </ul>
+    <h2 >Towns</h2>
+    <div class="center-block">
+        <div ng-repeat="town in towns" ng-click="townClicked(town)">
+            <button class="btn btn-info towns">{{town.name}}</button> 
+        </div>
+    </div>
 </div>

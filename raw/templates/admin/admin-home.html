@@ -1,0 +1,23 @@
+﻿<div class="navbar navbar-default" ng-if="isAdmin">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#/">ADMIN PANEL</a>
+    </div>
+    <div class="navbar-collapse collapse navbar-responsive-collapse">
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#/">View All ads</a></li>
+            <li class=""><a href="#/admin/all-users">View All Users</a></li>
+            <li class=""><a href="#/">View All Categories</a></li>
+
+            <li><a href="#/" ng-click="publishAdd()"></a></li>
+
+        </ul>
+
+
+    </div>
+</div>
+

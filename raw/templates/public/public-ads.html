@@ -3,42 +3,45 @@
 <div class="public-ads">
 
     <div ng-repeat="ad in adsData.ads">
-        <div class="container">
-           
-                <div class="row public-ads">
-                    <div class="col-md-6">
-                        <h3 class="pull-left">
-                            {{ad.title}}
-                        </h3>
-                    </div>
 
-                    <div class="col-md-2">
-                        <span class="pull-right">
-                            {{ad.date | date: 'dd-MMM-yy'}}
-                        </span>
+        <div class="well">
+        <div class="row public-ads">
+            <div class="col-md-6">
+                <h3 class="pull-left">
+                    {{ad.title}}
+                </h3>
+            </div>
+
+            <div class="col-md-6">
+                <span class="pull-right text-info">
+                    {{ad.date | date: 'dd-MMM-yy'}}
+                </span>
+            </div>
+        </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="img-rounded">
+                        <img class="img-responsive img-bordered" src="" ng-src="{{ad.imageDataUrl}}">
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-2">
-                        <div class="well">
-                            <img class="img-responsive" src="" ng-src="{{ad.imageDataUrl}}" width="150px">
-                        </div>
-                    </div>
 
-                    <div class="col-md-3">
+                <div class="col-md-8">
+                    <blockquote class="text-danger">
                         <div class="center-block">
                             {{ad.text}}
                         </div>
-                        <div>
-                            Name:  {{ad.ownerName}}<br />
-                            Email: {{ad.ownerEmail}}<br />
-                            tel.   {{ad.ownerPhone}}<br />
-                        </div>
-                    </div>
+                    </blockquote>
+                    <div class="blockquote-reverse">
+                        Name:  <strong>{{ad.ownerName}}</strong><br />
+                        Email:<strong> {{ad.ownerEmail}} </strong><br />
+                        tel.   <strong>{{ad.ownerPhone}}</strong><br />
+</div>
                 </div>
             </div>
         </div>
-    
-
-    
+    </div>
 </div>
+
+
+
+

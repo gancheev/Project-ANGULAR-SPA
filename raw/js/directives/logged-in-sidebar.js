@@ -2,7 +2,7 @@
     return {
         controller: 'LoggedInSidebarController',
         restrict: 'E',
-        templateUrl: 'templates/public/left-sidebar.html',
+        templateUrl: 'templates/public/logged-in-sidebar.html',
         replace: false,
 
     };

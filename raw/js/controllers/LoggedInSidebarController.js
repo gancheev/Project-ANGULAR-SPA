@@ -1,3 +1,6 @@
-﻿app.controller('LoggedInSidebarController', ['$scope', function () {
+﻿app.controller('LoggedInSidebarController', ['$scope', '$location', 'authentication', function ($scope, $location, authentication) {
+    
+
+
 
 }])
