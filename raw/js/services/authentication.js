@@ -29,6 +29,12 @@
     function isLoggedIn() {
         return !!getUserData();
     }
+
+    function show() {
+        var showe = false;
+        return showe;
+    }
+
     function getName() {
         var currentUserName = getUserData().username;
         return currentUserName;
@@ -41,7 +47,8 @@
         removeUser: removeUser,
         isAdmin: isAdmin,
         isLoggedIn: isLoggedIn,
-        getName: getName
+        getName: getName,
+        show: show
     }
 
 });

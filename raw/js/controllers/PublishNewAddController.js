@@ -1,7 +1,6 @@
-﻿app.controller('PublishNewAddController', ['$scope', 'authentication', function ($scope, authentication) {
+﻿app.controller('PublishNewAddController', ['$scope','$location', 'authentication', function ($scope,$location, authentication) {
    
-   
-
+    var show = true;
 
 
 }])
