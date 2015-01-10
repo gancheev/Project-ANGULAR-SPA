@@ -1,19 +1,20 @@
 ﻿    <header>
         <h1>Ads - {{pageTitle}}</h1>
+        
     </header>
     <div id="wrapper">
-        <div class="col-md-3">
+        <div class="col-md-2">
             <div ng-include="'templates/public/left-sidebar.html'" ng-if="!isLoggedIn"></div>
             <div ng-include="'templates/public/logged-in-sidebar.html'" ng-if="isLoggedIn"></div>
         </div>
-        <div class="col-md-6">
-            <div class="well">
+        <div class="col-md-8">
+            <div class="well public-ads">
                 <div class="categories">
                     <public-ads></public-ads>
                 </div>
             </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-1">
             <categories></categories>
             <towns></towns>
         </div>

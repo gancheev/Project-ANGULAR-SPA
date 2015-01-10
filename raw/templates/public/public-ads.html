@@ -1,16 +1,41 @@
-﻿<div class="public-ads">
-    <img src="images/loading.gif" ng-hide="ready" />
-    <table class="table table-striped table-hover " ng-cloak>
-        <thead>
-            <tr>
-                <th>#</th>
-                <th>Name</th>
-                <th>Text</th>
-                <th>Date</th>
-            </tr>
-        </thead>
-        <tbody>
-         <tr class="warning" ng-repeat="ad in adsData.ads"> <td>{{ad.id}}</td><td>{{ad.title}}</td> <td>{{ad.text}}</td> <td>{{ad.date}}</td> </tr>
-        </tbody>
-    </table>
+﻿
+<img src="images/loading.gif" ng-hide="ready" />
+<div class="public-ads">
+
+    <div ng-repeat="ad in adsData.ads">
+        <div class="container">
+
+            <div class="row public-ads">
+                <div class="col-md-3">
+                    <h3 class="pull-left">
+                        {{ad.title}}
+                    </h3>
+                </div>
+                <div class="col-md-4">
+                    <span class="pull-right">
+                        {{ad.date | date: 'dd-MMM-yy'}}
+                    </span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    <div class="well">
+                        <img class="img-responsive" src="" ng-src="{{ad.imageDataUrl}}" width="150px">
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div>
+                        {{ad.text}}
+                    </div>
+                    <div>
+                        Name:  {{ad.ownerName}}<br />
+                        Email: {{ad.ownerEmail}}<br />
+                        tel.   {{ad.ownerPhone}}<br />
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
 </div>
