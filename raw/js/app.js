@@ -28,7 +28,7 @@ app.config(['$routeProvider', function ($routeProvider) {
     });
     $routeProvider.when('/admin/all-users', {
         templateUrl: 'templates/admin/all-users.html',
-        controller: 'AdminController'
+        controller: 'CategoriesController'
     });
     $routeProvider.otherwise({
         redirectTo: '/'

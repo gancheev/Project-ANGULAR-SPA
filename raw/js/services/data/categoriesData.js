@@ -4,7 +4,13 @@
         return $resource(baseServiceUrl + 'categories').query();
 
     }
+    function adminGetCategories() {
+
+        return $resource(baseServiceUrl + 'admin/categories').query();
+
+    }
     return {
-        getCategories: getCategories
+        getCategories: getCategories,
+        adminGetCategories: adminGetCategories
     }
 }])

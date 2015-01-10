@@ -1,0 +1,24 @@
+﻿<div ng-include="'templates/admin/admin-home.html'" ng-if="isLoggedIn"></div>
+<table class="table table-striped table-hover ">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Username</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Tel</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+           
+                
+                    <tr ng-repeat="category in categories" ng-click="categoryClicked(category)">
+                        <td class="btn btn-info categoriesName">{{category.name}}</td>
+                    </tr>
+                
+            
+        
+        
+    </tbody>
+</table> 

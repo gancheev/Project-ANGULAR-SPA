@@ -3,6 +3,6 @@
         controller: 'AdminController',
         restrict: 'E',
         templateUrl: 'templates/admin/admin-home.html',
-        replace: true,
+        replace: false,
     }
 });

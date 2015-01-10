@@ -9,4 +9,9 @@
         $rootScope.$broadcast('categoryClicked',category)
 
     }
+    categoriesData.adminGetCategories()
+    .$promise
+    .then(function (data) {
+        $scope.categories = data;
+    });
 }])
