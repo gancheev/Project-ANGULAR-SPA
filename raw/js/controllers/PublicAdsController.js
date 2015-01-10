@@ -16,16 +16,20 @@
 
     $scope.$on('categoryClicked', function (event, category) {
 
-        loadPublicAds(filter.getFilterParams());
+        loadPublicAds(filter.getParams());
 
     });
 
     $scope.$on('townClicked', function (event, town) {
 
-        loadPublicAds(filter.getFilterParams());
+        loadPublicAds(filter.getParams());
 
     });
-    $scope.pageChanged
+    $scope.pageChanged = function () {
+
+        filter.setPageParams({startPage:$scope.currentPage, pageSize: 0});
+        adsData.getPublicAds(filter.getParams)
+    }
 
 
 }]);

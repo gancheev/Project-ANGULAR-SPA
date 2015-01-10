@@ -28,6 +28,7 @@
             authentication.removeUser();
         });
     }
+
     return {
         register: registerUser,
         login: loginUser,

@@ -29,6 +29,10 @@
     function isLoggedIn() {
         return !!getUserData();
     }
+    function getName() {
+        var currentUserName = getUserData().username;
+        return currentUserName;
+    }
 
     return {
         saveUser: saveUserData,
@@ -36,7 +40,8 @@
         getHeaders: getHeaders,
         removeUser: removeUser,
         isAdmin: isAdmin,
-        isLoggedIn: isLoggedIn
+        isLoggedIn: isLoggedIn,
+        getName: getName
     }
 
 });

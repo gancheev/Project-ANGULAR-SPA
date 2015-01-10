@@ -18,7 +18,8 @@ app.config(['$routeProvider', function ($routeProvider) {
         templateUrl: 'templates/register.html',
         controller: 'RegisterController'
     });
-    $routeProvider.otherwise({
-        redirectTo: '/'
+    $routeProvider.when('/user', {
+        templateUrl: 'templates/user/publish-new-ad.html',
+        controller: 'PublishNewAddController'
     });
 }]);

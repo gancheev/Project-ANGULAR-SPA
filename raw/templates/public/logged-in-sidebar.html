@@ -1,9 +1,34 @@
-﻿<div>
-    <ul class="nav nav-pills nav-stacked ">
-        <li class="active"><a href="#/">Home</a></li>
-        <li><a href="#/user/ads">My Ads</a></li>
-        <li><a href="#/user/ads/publish">Publish new ad</a></li>
-        <li><a href="#/user/editProfile">Edit Profile</a></li>
-    </ul>
-    
+﻿<div class="navbar navbar-default">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#/">AngularJS ADS</a>
+    </div>
+    <div class="navbar-collapse collapse navbar-responsive-collapse">
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#/">Home</a></li>
+            <li><a href="#/user/publish-ad">Publish Add</a></li>
+
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+            
+            <li class="dropdown">
+                <a href="#/" class="dropdown-toggle" data-toggle="dropdown">My Profile <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-header">Logged in as: <h5>{{currentUser}}</h5></li>
+                    <li class="divider"></li>
+                  
+                    <li><a href="#/">My Ads</a></li>
+                    <li><a href="#/">Edit Profile</a></li>
+                    <li><a href="#/">View all ads</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#/" ng-click="logout()" id="logout">Logout</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
 </div>

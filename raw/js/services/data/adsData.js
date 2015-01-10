@@ -3,8 +3,8 @@
         update: { method: 'PUT' }
     });
 
-    function getPublicAds(filterParams) {
-        return resource.get(filterParams);
+    function getPublicAds(params) {
+        return resource.get(params);
     }
 
     function editAd(addId, ad) {
